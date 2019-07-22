@@ -237,7 +237,7 @@ impl WinitPlatform {
     /// * window size / dpi factor changes are applied
     /// * keyboard state is updated
     /// * mouse state is updated
-    pub fn handle_event(&mut self, io: &mut Io, window: &Window, event: &Event<()>) {
+    pub fn handle_event<T>(&mut self, io: &mut Io, window: &Window, event: &Event<T>) {
         match *event {
             Event::WindowEvent {
                 window_id,
