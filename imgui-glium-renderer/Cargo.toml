@@ -13,5 +13,5 @@ categories = ["gui", "rendering"]
 travis-ci = { repository = "Gekkio/imgui-rs" }
 
 [dependencies]
-glium = { version = "0.25.0-glutin22", default-features = false, path="../../glium" }
+glium = { version = "0.26.0-alpha", default-features = false, path="../../glium" }
 imgui = { version = "0.1.0-pre-glutin", path = "../", features = ["glium"] }
